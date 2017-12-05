@@ -23,6 +23,20 @@
     /* Your code goes here */
   $(".wrong-msg").hide();
   $(".correct-msg").hide();
+  $(".btn-right").on("click", function() {
+    $(".correct-msg").slideDown();
+    $(".wrong-msg").hide();
+      $(".btn").removeClass("active");
+      $(this).addClass("active");
+  });
+  $(".btn-wrong").on("click", function() {
+    $(".wrong-msg").slideDown();
+    $(".correct-msg").hide();
+    $(".btn").removeClass("active");
+    $(this).addClass("active");
+  });
+
+
 
 
   </script>
